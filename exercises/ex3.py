@@ -1,9 +1,9 @@
 import sys
-sys.path.append('src')
+sys.path.append('../src')
 import trie, utils, rlp
 
 #initialize trie from previous hash; add new [key, value] where key has common prefix
-state = trie.Trie('triedb', '15da97c42b7ed2e1c0c8dab6a6d7e3d9dc0a75580bbc4f1f29c33996d1415dcc'.decode('hex'))
+state = trie.Trie('triedb', '4161fc351963df5d93bb2d8b05f1ccb76a25de0a6ea0e9293aa139822bd2e876'.decode('hex'))
 print state.root_hash.encode('hex')
 print state.root_node
 print ''
